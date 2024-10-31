@@ -1,0 +1,248 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ th[scope=row] {
+    font-weight: 400;
+    letter-spacing: 0.5px;
+ }
+
+ .wos__icons_field {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+ .wos__icons {
+    padding-right: 10px;
+    margin-bottom: -4px;
+    position: relative;
+
+}
+
+.wos__icons ul {
+    list-style-type: none;
+    padding: 5px;
+    width: 320px;
+    height: 285px;
+    overflow-y: scroll;
+    margin: -5px 0 0;
+    display: none;
+    border: 1px solid #8c8f94;
+    background-color: #FCFCFC;
+    position: absolute;
+    z-index: 9;
+}
+
+.wos__icons li {
+    display: inline-block;
+}
+
+.wos__icons a {
+    display: inline-block;
+    overflow: hidden;
+    text-decoration: none;
+    border: 1px solid #dcdee2;
+    padding: 7px;
+    color: #8d8d8d;
+    position: relative;
+    border-radius: 5px;
+}
+
+.wos__icons a.open {
+    border-bottom-color: #fff;
+    color: #000;
+}
+
+.wos__icons .wos__icons--arrow {
+    float: right;
+}
+
+span.dashicons.dashicons-no-icon {
+    display: inline-block;
+    transform: rotate(50deg);
+    border-top: 1px solid #000;
+    height: 0px;
+    margin-top: 10px;
+}
+
+.wos__icon label[for=no-icon]{
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+.wos__hidden {
+    display: none !important;
+}
+
+.wos__icon label {
+    display: inline-block;
+    padding: 4px;
+    cursor: pointer;
+    color: #777;
+    border: 1px solid transparent;
+
+}
+
+.wos__icon label:hover {
+    color: #000;
+}
+
+.wos__icon input[type='radio']:checked + label {
+    color: #000;
+    border-color: #000;
+}
+
+mark.order-status .dashicons {
+    padding: 6px 10px;
+}
+
+.wc-product-search-form input[type=file] {
+    border: 1px solid #dcdee2;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.wc-product-search-form input[type=text],
+.wc-product-search-form input[type=color],
+.wc-product-search-form select,
+.wc-product-search-form textarea {
+    border: 1px solid #dcdee2;
+}
+
+.wc-product-search-form input[type=color] {
+    width: 60px;
+    height: 36px;
+    margin-right: 10px;
+}
+
+/** Rough **/
+table.form-table.wc-product-search-form p.desc {
+    color: #b59292;
+    font-style: italic;
+    font-size: 12px;
+}
+
+table.form-table.wc-product-search-form td p.img_icon {
+    width: 150px;
+    height: 150px;
+}
+
+table.form-table.wc-product-search-form img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/** Metabox design **/
+table.form-table.wc-product-search-form th {
+    padding: 20px 10px 20px 20px;
+
+}
+
+table.form-table.wc-product-search-form tbody {
+    border: 1px solid #ddd;
+}
+
+table.form-table.wc-product-search-form tr > th {
+    background: #FCFCFC;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+table.form-table.wc-product-search-form tr > th > label {
+    color: #555;
+}
+
+table.form-table.wc-product-search-form tr td {
+    border-bottom: 1px solid #ddd;
+}
+
+table.form-table.wc-product-search-form tr [type=hidden] + td {
+    border: 0 solid;
+    padding: 0;
+}
+
+table.form-table.wc-product-search-form.order-status-pro tr > th > label {
+    color: #cdcdcd;
+    cursor: auto;
+}
+
+div#wc_order_status_meta .inside {
+    display: flex !important;
+    flex-direction: column;
+}
+
+table.form-table.wc-product-search-form.order-status-pro {
+    order: 2;
+}
+
+.ss-main .ss-values .ss-value {
+    background-color: #007cba;
+    padding: 8px;
+}
+
+.ss-main,
+.wc-product-search-form select {
+    width: 50%;
+}
+
+td.used.column-used {
+    font-weight: 600;
+}
+
+span.order-status.status-icon {
+    padding: 3px 15px;
+    display: inline-block;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Hide shortcode by default */
+tr.ajax_search_shortcode {
+    display: none;
+}
+
+p.ajax_search_shortcode {
+    box-shadow: 0 0 0 transparent;
+    border-radius: 4px;
+    border: 1px solid #8c8f94;
+    background-color: #fff;
+    color: #2c3338;
+    padding: 2px 5px;
+    width: 240px;
+}
+
+/* Spinner */
+.loader {
+    border: 3px solid #ddcaca;
+    border-radius: 50%;
+    border-top: 3px solid #0f6ba9;
+    width: 20px;
+    height: 20px;
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

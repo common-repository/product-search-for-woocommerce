@@ -1,0 +1,81 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+div#woo_ajax_search {
+  position: relative;
+}
+
+div#woo_ajax_search ul {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #eee;
+  background: #FFF;
+}
+
+div#woo_ajax_search {
+  display: none;
+}
+
+div#woo_ajax_search button {
+  border: none;
+  background: #0093e9;
+  color: #FFF;
+  width: 100%;
+  padding: 3px;
+  margin-top: 10px;
+}
+
+div#woo_ajax_search button:hover {
+  background: #1776ad;
+}
+
+div#woo_ajax_search li {
+  border-bottom: 1px solid #ddd;
+  list-style: none;
+}
+
+div#woo_ajax_search li:last-child {
+  border-bottom: none;
+}
+
+a.ajax_search__product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+div.ajax_search__product-content {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+div.ajax_search__product-image {
+  max-width: 70px;
+  max-height: 70px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+div#woo_ajax_search li img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h4.ajax_search__product-title {
+  font-size: 14px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+div.ajax_search__product-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}

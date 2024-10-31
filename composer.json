@@ -1,0 +1,20 @@
+{
+    "name": "storeplugin/wc-product-search",
+    "description": "This is a description of the plugin.",
+    "type": "plugin",
+    "license": "GPLv2 or later",
+    "autoload": {
+        "psr-4": {
+            "StorePlugin\\WcProductSearch\\": "includes/"
+        },
+        "files": ["includes/functions.php"]
+    },
+    "authors": [
+        {
+            "name": "Store Plugin",
+            "email": "support@storeplugin.net"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
